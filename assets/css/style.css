@@ -41,7 +41,6 @@
 /* Hero Section */
 
 .carousel-item {
-    min-height: 100vh;
     /* Ajusta la altura del carrusel */
     background-size: cover;
     background-position: center;
@@ -50,7 +49,7 @@
 .hero-section {
     position: relative;
     color: #F4F4F9;
-    padding: 200px;
+    padding: 100px;
 }
 
 .text-overlay {
@@ -64,16 +63,23 @@
     /* Bordes redondeados opcionales */
 }
 
-.hero-section h1 {
+ h1 {
     font-family: 'Cabin', cursive;
     color: #0D3B66;
     font-weight: 700 !important;
 
 }
 
-.hero-section p {
+h2 {
     font-family: 'Cabin', cursive;
     color: #0D3B66;
+    font-weight: 500 !important;
+
+}
+
+.hero-section p {
+    font-family: 'Cabin', cursive;
+    color: #3E3E3E;
 }
 
 
@@ -101,6 +107,35 @@
     border: none;
     /* Optional: Remove border if needed */
     font-weight: 600;
+}
+
+/* Card Section - Services*/
+
+.card {
+    border: none; /* Elimina el borde de la tarjeta */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+.card-img-top {
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+.card-title {
+    font-family: 'Cabin', cursive;
+    font-weight: 400;
+    color: #0D3B66;
+}
+
+.card-text {
+    font-family: 'Cabin', cursive;
+    color: #3E3E3E;
 }
 
 /* Media queries */
