@@ -6,6 +6,9 @@
 
 .navbar-custom {
     background-color: #0D3B66 !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     /* Updated background color */
 }
 
@@ -65,7 +68,7 @@
     /* Bordes redondeados opcionales */
 }
 
- h1 {
+h1 {
     font-family: 'Cabin', cursive;
     color: #0D3B66;
     font-weight: 700 !important;
@@ -115,20 +118,27 @@ h2 {
 /* Card Section - Services*/
 
 .card {
-    border: none; /* Elimina el borde de la tarjeta */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+    border: none;
+    /* Elimina el borde de la tarjeta */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Agrega una sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animación al pasar el mouse */
     margin-top: 10px;
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Eleva la tarjeta al pasar el mouse */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    transform: translateY(-10px);
+    /* Eleva la tarjeta al pasar el mouse */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Aumenta la sombra */
 }
 
 .card-img-top {
-    height: 200px; /* Ajusta la altura de la imagen */
-    object-fit: contain; /* Asegura que la imagen se recorte correctamente */
+    height: 200px;
+    /* Ajusta la altura de la imagen */
+    object-fit: contain;
+    /* Asegura que la imagen se recorte correctamente */
 }
 
 .card-title {
@@ -145,8 +155,10 @@ h2 {
 /* Expirience Section */
 
 .experience-item i {
-    color: #FFC857; /* Icon color */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+    color: #FFC857;
+    /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* Smooth animation */
 }
 
 .experience-title {
@@ -164,11 +176,16 @@ h2 {
 /* Our Experience */
 
 .carousel-item img.rounded-circle {
-    border: 3px solid #FFC857; /* Add a border around the image */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    object-fit: cover; /* Ensures the image covers the circular frame */
-    width: 100px; /* Set the width of the image */
-    height: 100px; /* Set the height of the image */
+    border: 3px solid #FFC857;
+    /* Add a border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+    object-fit: cover;
+    /* Ensures the image covers the circular frame */
+    width: 100px;
+    /* Set the width of the image */
+    height: 100px;
+    /* Set the height of the image */
 }
 
 .carousel-item p {
@@ -184,10 +201,46 @@ h2 {
     font-weight: 600;
 }
 
+
+/* Footer Section */
+
+footer {
+    background-color: #0D3B66;
+    color: #F4F4F9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #F4F4F9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+
+.social-icons a {
+    font-size: 1.5rem;
+    /* Adjust icon size */
+    color: #F4F4F9;
+    /* Icon color */
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+    color: #FFC857;
+    /* Change color on hover */
+}
+
 /* Media queries */
 
 /* Large devices (small laptops, 992px and up) */
 @media screen and (max-width: 992px) {
+
     /* Make all service cards the same height for consistency */
     .hero-section {
         padding: 50px 0;
