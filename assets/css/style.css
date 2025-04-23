@@ -86,22 +86,26 @@ h2 {
 .hero-section p {
     font-family: 'Cabin', cursive;
     color: #3E3E3E;
+    font-size: 1.25rem;
 }
 
 
 .hero-1 {
     background: url('../images/hero.webp') no-repeat center center;
     background-size: cover;
+    min-height: 500px;
 }
 
 .hero-2 {
     background: url('../images/hero.webp') no-repeat center center;
     background-size: cover;
+    min-height: 500px;
 }
 
 .hero-3 {
     background: url('../images/hero.webp') no-repeat center center;
     background-size: cover;
+    min-height: 500px;
 }
 
 
@@ -114,7 +118,6 @@ h2 {
     /* Optional: Remove border if needed */
     font-weight: 600;
 }
-
 /* Card Section - Services*/
 
 .card {
@@ -125,6 +128,7 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* Animación al pasar el mouse */
     margin-top: 10px;
+    min-height: 304px
 }
 
 .card:hover {
@@ -191,7 +195,7 @@ h2 {
 .carousel-item p {
     font-family: 'Cabin', sans-serif;
     color: #3E3E3E;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 10px 0;
 }
 
@@ -234,6 +238,24 @@ footer a:hover {
 .social-icons a:hover {
     color: #FFC857;
     /* Change color on hover */
+}
+
+/* form */
+
+.lead {
+    font-family: 'Cabin', cursive;
+    color: #3E3E3E;
+    font-size: 1.25rem;
+}
+
+.form-label {
+    font-family: 'Cabin', cursive;
+    color: #3E3E3E;
+    font-weight: 600;
+}
+
+.section{
+    padding-top: 6rem  !important;
 }
 
 /* Media queries */

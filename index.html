@@ -21,7 +21,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-custom">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <!--<img src="assets/images/logo.webp" alt="Logo" width="60" height="60">-->quark
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,16 +31,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,14 +53,14 @@
             <div class="carousel-inner">
                 <!-- Hero 1 -->
                 <div class="carousel-item active">
-                    <div class="container-fluid hero-section hero-1">
+                    <div class="container hero-section hero-1">
                         <div class="container text-start">
                             <div class="row">
                                 <div class="col-lg-6 text-overlay">
                                     <h1 class="display-4">Sustainable Construction</h1>
                                     <p class="lead">quark es una empresa consultora colombiana comprometida con el
                                         crecimiento de la construcción sostenible.</p>
-                                    <a href="#" class="btn btn-light btn-lg">Contact Us</a>
+                                    <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -68,13 +68,13 @@
                 </div>
                 <!-- Hero 2 -->
                 <div class="carousel-item">
-                    <div class="container-fluid hero-section hero-2">
+                    <div class="container hero-section hero-2">
                         <div class="container text-start">
                             <div class="row">
                                 <div class="col-lg-6 text-overlay">
                                     <h1 class="display-4">Innovative Solutions</h1>
                                     <p class="lead">Building a better future with cutting-edge technology.</p>
-                                    <a href="#" class="btn btn-light btn-lg">Learn More</a>
+                                    <a href="contact.html" class="btn btn-light btn-lg">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -82,13 +82,13 @@
                 </div>
                 <!-- Hero 3 -->
                 <div class="carousel-item">
-                    <div class="container-fluid hero-section hero-3">
+                    <div class="container hero-section hero-3">
                         <div class="container text-start">
                             <div class="row">
                                 <div class="col-lg-6 text-overlay">
                                     <h1 class="display-4">Eco-Friendly Practices</h1>
                                     <p class="lead">Committed to reducing the environmental impact of construction.</p>
-                                    <a href="#" class="btn btn-light btn-lg">Discover More</a>
+                                    <a href="contact.html" class="btn btn-light btn-lg">Discover More</a>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
 
     <main>
     <!-- Our Services Section -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light section" id="services">
         <div class="container">
             <h2 class="text-center mb-4">Our Services</h2>
             <div class="row">
@@ -232,7 +232,7 @@
         </div>
     </section>
     </main>
-    <footer class="py-4" style="background-color: #0D3B66; color: #F4F4F9;">
+    <footer class="py-4 mt-auto" style="background-color: #0D3B66; color: #F4F4F9;">
         <div class="container d-flex justify-content-between align-items-center">
             <p class="mb-0">&copy; 2025 Quark. All rights reserved.</p>
             <div class="social-icons">
@@ -250,7 +250,30 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/61db1334dc.js" crossorigin="anonymous"></script>
-    
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    const targetId = e.target.getAttribute("href");
+                    if (targetId && targetId.startsWith("#")) {
+                        e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+                        const section = document.querySelector(targetId);
+                        if (section) {
+                            const navbarHeight = document.querySelector(".navbar").offsetHeight;
+                            window.scroll({
+                                top: section.offsetTop - navbarHeight, // Ajusta el desplazamiento según la altura de la barra de navegación
+                                behavior: "smooth",
+                            });
+                            document
+                                .querySelector(".navbar-collapse")
+                                .classList.remove("show"); // Colapsa la barra de navegación en dispositivos móviles
+                        }
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
