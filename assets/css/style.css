@@ -46,6 +46,8 @@
     background-position: center;
 }
 
+
+
 .hero-section {
     position: relative;
     color: #F4F4F9;
@@ -116,6 +118,7 @@ h2 {
     border: none; /* Elimina el borde de la tarjeta */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+    margin-top: 10px;
 }
 
 .card:hover {
@@ -155,6 +158,30 @@ h2 {
 .experience-text {
     font-family: 'Cabin', cursive;
     color: #3E3E3E;
+}
+
+
+/* Our Experience */
+
+.carousel-item img.rounded-circle {
+    border: 3px solid #FFC857; /* Add a border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    object-fit: cover; /* Ensures the image covers the circular frame */
+    width: 100px; /* Set the width of the image */
+    height: 100px; /* Set the height of the image */
+}
+
+.carousel-item p {
+    font-family: 'Cabin', sans-serif;
+    color: #3E3E3E;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.carousel-item h5 {
+    font-family: 'Cabin', cursive;
+    color: #0D3B66;
+    font-weight: 600;
 }
 
 /* Media queries */
