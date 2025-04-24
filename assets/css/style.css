@@ -108,6 +108,18 @@ h2 {
     min-height: 500px;
 }
 
+.hero-about {
+    background: url('../images/hero-about.webp') no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.hero-contact {
+    background: url('../images/hero-contact.webp') no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+}
+
 
 .btn {
     background-color: #FFC857 !important;
