@@ -36,6 +36,10 @@ The purpose of this application is to:
 ![Thank You Page](assets/images/thankyou-screenshot.webp)
 *Confirms successful form submission and guides users back to the home page.*
 
+### Performance
+![Performance Test](assets/images/performance-screenshot.webp)
+*Performance test*
+
 ## Deployment Procedure
 1. Clone the repository:
    ```bash
