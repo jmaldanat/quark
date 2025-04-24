@@ -21,19 +21,19 @@ The purpose of this application is to:
 
 ## Screenshots
 ### Home Page
-![Home Page](assets/images/home-screenshot.png)
+![Home Page](assets/images/home-screenshot.webp)
 *Showcases Quark's mission and services, providing users with an overview of the company's offerings.*
 
 ### About Page
-![About Page](assets/images/about-screenshot.png)
+![About Page](assets/images/about-screenshot.webp)
 *Introduces the team and highlights Quark's values and expertise.*
 
 ### Contact Page
-![Contact Page](assets/images/contact-screenshot.png)
+![Contact Page](assets/images/contact-screenshot.webp)
 *Allows users to submit inquiries directly to Quark.*
 
 ### Thank You Page
-![Thank You Page](assets/images/thankyou-screenshot.png)
+![Thank You Page](assets/images/thankyou-screenshot.webp)
 *Confirms successful form submission and guides users back to the home page.*
 
 ## Deployment Procedure
