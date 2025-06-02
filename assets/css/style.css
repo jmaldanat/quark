@@ -96,19 +96,19 @@ h2 {
 
 
 .hero-1 {
-    background: url('../images/hero.webp') no-repeat center center;
+    background: url('../images/hero-airport.webp') no-repeat center center;
     background-size: cover;
     min-height: 500px;
 }
 
 .hero-2 {
-    background: url('../images/hero.webp') no-repeat center center;
+    background: url('../images/hero-port.webp') no-repeat center center;
     background-size: cover;
     min-height: 500px;
 }
 
 .hero-3 {
-    background: url('../images/hero.webp') no-repeat center center;
+    background: url('../images/hero-train.webp') no-repeat center center;
     background-size: cover;
     min-height: 500px;
 }
